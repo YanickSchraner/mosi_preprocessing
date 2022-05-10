@@ -13,3 +13,10 @@ WORD_EMB_PATH: Optional[str] = './data/glove.6B.300d.txt'
 
 # path to loaded word embedding matrix and corresponding word2id mapping
 CACHE_PATH: Optional[str] = './data/embedding_and_mapping.pt'
+
+# path to the openface executables
+OPENFACE_FEATURE_EXTRACTION = './external/OpenFace/build/bin/FeatureExtraction'
+OPENFACE_LANDMARK_VID = './external/OpenFace/build/bin/FaceLandmarkVid'
+
+# path to COVAREP
+COVAREP_PATH = './external/covarep'
