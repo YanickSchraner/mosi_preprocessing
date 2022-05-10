@@ -19,3 +19,8 @@ git clone git@github.com:A2Zadeh/CMU-MultimodalSDK.git
     1. Run startup.m
     2. Set input_dir to the directory containing the audio files like `input_dir='/home/yanick/Code/mosi_preprocessing/data/CMU_MOSI/Raw/Audio/WAV_16000/Aligned/'`
     3. Run `COVAREP_feature_extraction(input_dir)` in Matlab command window
+
+Code testet on Ubuntu 20.04 LTS
+
+## Windows:
+Installation instructions for HTK can be found here: https://www.stonybrook.edu/commcms/linguistics/jiwonyun/publication/2016_Yun_Kang_Ko_AH.pdf in the appendix (page 13)
