@@ -191,6 +191,7 @@ def generate_language_features(paths):
             sentences = f.readlines()
             words_in_sentences = [ANNOTATED_TRANSCRIPT_REGEX.sub('', sentence.strip()).split() for sentence in
                                   sentences]
+            # Words not part of the dictionary are ignored
             glove_embeddings_in_sentences = [glove_embeddings[word.lower()] for sentence in words_in_sentences for word
                                              in
                                              sentence if word in glove_embeddings.keys()]
