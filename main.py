@@ -3,7 +3,6 @@ import subprocess
 from collections import defaultdict
 
 from moviepy.video.io.VideoFileClip import VideoFileClip
-from oct2py import octave
 from pydub import AudioSegment
 
 from constants import SDK_PATH, DATA_PATH, WORD_EMB_PATH, OPENFACE_FEATURE_EXTRACTION, COVAREP_PATH
