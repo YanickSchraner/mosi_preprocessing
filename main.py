@@ -131,7 +131,7 @@ def create_aligned_data(paths):
             already_dropped_phoneme_alignments = not f.readline().strip().startswith('File type')
         if not already_dropped_phoneme_alignments:
             # Delete phoneme level alignments
-            check_call(['sed', '-i', '-e', '0,/"word"/d', path_dict['alignments']])
+            check_call(['sed', "-i''", '-e', '0,/"word"/d', path_dict['alignments']])
         words, word_start_end_times = get_word_timings(path_dict)
         sentence_start_end_times = get_sentence_timings(path_dict, words, word_start_end_times)
 
